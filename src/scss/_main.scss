@@ -1,12 +1,56 @@
+@import'colors';
+
 .main {
     grid-area: main;
+    position: relative;
     background-color: $main;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    
-    @media(max-width: 400px) {
-        grid-area: title;
+   
+    .main__name {
+        position: absolute;
+        top: 273px;
+        left: -52px;
+        size: 101px;
+        .main__first, .main__second {  
+            line-height: 100px;
+            letter-spacing: 2.02px;
+            color: $name;
+        }
     }
+    .main__contact {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 110px;
+        background-color: $light;
+        bottom: 0;
+        left: 0;
+        [class^="icon-btn"] {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $dark;
+            color: $light;
+        }
+    }
+    .main__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .main__position {
+        position: absolute;
+        bottom: 269px;
+        left: -52px;
+    }
+    .main__line {
+        position: absolute;
+        bottom: 269px;
+        left: 249px;
+        width:56px;
+        height: 7px;
+        background-color: $light;
 
+    }
 }
