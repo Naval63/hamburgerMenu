@@ -1,0 +1,25 @@
+@import'colors';
+@import'fonts';
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    margin-top: 78px;
+    .menu__text {
+        width: 182px;
+        display: flex;
+        flex-direction: row;
+        color: $dark;
+        font-family: $defaul-font;
+        line-height: 30px;
+        letter-spacing: 2.8px;
+    }
+    .menu__content {
+        margin: 24px;  
+    }
+    @media(max-width: 400px) {
+        grid-area: menu;
+    }
+
+}

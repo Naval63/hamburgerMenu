@@ -1,0 +1,14 @@
+.title {
+    grid-area: title;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: $dark;
+    .title_insite {
+        display: flex;  
+        width: 290px;
+        height: 270px;
+        background-color: $aside;
+    }
+    
+}

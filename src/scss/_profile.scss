@@ -1,0 +1,18 @@
+@import'colors';
+@import'fonts';
+
+.profile {
+    grid-area: profile;
+    background-color: $profile;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    font-family: $defaul-font;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    @media(max-width: 400px) {
+        grid-area: profile;
+    }
+}

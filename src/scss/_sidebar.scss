@@ -1,0 +1,10 @@
+@import'colors';
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: $aside;
+    @media(max-width: 400px) {
+        grid-area: title;
+        display: none;
+    }
+}

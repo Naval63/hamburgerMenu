@@ -1,0 +1,19 @@
+@import'colors';
+
+.social {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    [class^="icon-btn"] {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin-top: 9px;
+        color: $light;
+        background: $dark;
+    }
+    @media(max-width: 400px) {
+        grid-area: social;
+    }
+}
